@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Gamja+Flower:400');
+
+
+body {
+    background-image : url("rabbit.jpg");
+    background-size : 100%;
+    font-family: 'Gamja Flower';
+}
+
+#header img {
+    width: 15%;
+    
+    
+    position: absolute;
+    right: 15%;
+    top: 25%;
+    animation: runrabbit 1s linear infinite normal;
+}
+
+@keyframes runrabbit {
+    0% {
+        transform: rotate(75deg);
+    }
+    25% {
+        transform: rotate(60deg);
+    }
+    50% {
+        transform: rotate(45deg);
+    }
+    75% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(15deg);
+    }
+}
+
+#content {
+    margin: 30px auto;
+    padding: 10px;
+
+    width: 70%;
+    height: 100%;
+
+    background-color: white;
+    border-radius: 10px;
+    
+    font-size: 2rem;
+}
+
+#grass {
+    display: inline-block;
+    position: absolute;
+    right: 15%;
+    top: 29%;
+    color: #5fba79;
+}
+
+#content hr{
+    border: 1px solid green;
+}
+#content ul {
+    list-style-type: none;
+}
+
+#content ul li, p{
+    font-size: 1.5rem;
+}
+
+.li-content{
+    display: none;
+    font-size: 1.3rem;
+    width: 90%;
+    border-bottom: 2px solid green;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: orange;
+}
